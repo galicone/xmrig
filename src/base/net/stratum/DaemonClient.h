@@ -97,6 +97,7 @@ private:
     } m_apiVersion = API_MONERO;
 
     BlockTemplate m_blocktemplate;
+    bool m_blocktemplateParsed = false;
     Coin m_coin;
     std::shared_ptr<IHttpListener> m_httpListener;
     String m_blockhashingblob;

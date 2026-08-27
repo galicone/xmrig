@@ -29,6 +29,7 @@
 #include "base/net/stratum/DaemonClient.h"
 #include "3rdparty/rapidjson/document.h"
 #include "3rdparty/rapidjson/error/en.h"
+#include "base/crypto/Algorithm.h"
 #include "base/io/json/Json.h"
 #include "base/io/json/JsonRequest.h"
 #include "base/io/log/Log.h"
@@ -144,7 +145,7 @@ int64_t xmrig::DaemonClient::submit(const JobResult &result)
 
     memcpy(data + m_job.nonceOffset() * 2, result.nonce, 8);
 
-    if (m_blocktemplate.hasMinerSignature() && result.sig) {
+    if (m_blocktemplateParsed && m_blocktemplate.hasMinerSignature() && result.sig) {
         memcpy(data + sig_offset * 2, result.sig, 64 * 2);
         memcpy(data + m_blocktemplate.offset(BlockTemplate::TX_PUBKEY_OFFSET) * 2, result.sig_data, 32 * 2);
         memcpy(data + m_blocktemplate.offset(BlockTemplate::EPH_PUBLIC_KEY_OFFSET) * 2, result.sig_data + 32 * 2, 32 * 2);
@@ -155,7 +156,7 @@ int64_t xmrig::DaemonClient::submit(const JobResult &result)
         }
     }
 
-    if (result.extra_nonce >= 0) {
+    if (m_blocktemplateParsed && result.extra_nonce >= 0) {
         Cvt::toHex(data + m_blocktemplate.offset(BlockTemplate::TX_EXTRA_NONCE_OFFSET) * 2, 8, reinterpret_cast<const uint8_t*>(&result.extra_nonce), 4);
     }
 
@@ -163,7 +164,7 @@ int64_t xmrig::DaemonClient::submit(const JobResult &result)
 
     Cvt::toHex(data + m_job.nonceOffset() * 2, 8, reinterpret_cast<const uint8_t*>(&result.nonce), 4);
 
-    if (m_blocktemplate.hasMinerSignature()) {
+    if (m_blocktemplateParsed && m_blocktemplate.hasMinerSignature()) {
         Cvt::toHex(data + sig_offset * 2, 128, result.minerSignature(), 64);
     }
 
@@ -210,7 +211,9 @@ void xmrig::DaemonClient::connect()
         m_pool.setAlgo(m_coin.algorithm());
     }
 
-    if ((m_apiVersion == API_MONERO) && !m_walletAddress.isValid()) {
+    // Safex (and other non-Monero) addresses do not decode as Monero wallets.
+    // Pass the address through to getblocktemplate; the daemon validates it.
+    if ((m_apiVersion == API_MONERO) && !m_walletAddress.isValid() && m_user.isEmpty()) {
         return connectError("Invalid wallet address.");
     }
 
@@ -396,10 +399,18 @@ bool xmrig::DaemonClient::parseJob(const rapidjson::Value &params, int *code)
         return jobError("Empty block template received from daemon."); // FIXME
     }
 
-    if (!m_blocktemplate.parse(blocktemplate, m_coin)) {
-        return jobError("Invalid block template received from daemon.");
-    }
+    m_blockhashingblob = Json::getString(params, kBlockhashingBlob);
+    m_blocktemplateParsed = m_blocktemplate.parse(blocktemplate, m_coin);
 
+    // Safex (and other non-Monero) templates fail BlockTemplate::parse. Fall back to the
+    // daemon-provided hashing blob and still submitblock with the nonce patched in the
+    // original template — the same daemon-mode path XMRig 5.4 used.
+    if (!m_blocktemplateParsed) {
+        if (m_blockhashingblob.isNull()) {
+            return jobError("Invalid block template received from daemon.");
+        }
+    }
+    else {
 #   ifdef XMRIG_PROXY_PROJECT
     const size_t k = m_blocktemplate.offset(BlockTemplate::MINER_TX_PREFIX_OFFSET);
     job.setMinerTx(
@@ -414,8 +425,6 @@ bool xmrig::DaemonClient::parseJob(const rapidjson::Value &params, int *code)
         m_blocktemplate.outputType() == 3
     );
 #   endif
-
-    m_blockhashingblob = Json::getString(params, kBlockhashingBlob);
 
     if (m_blocktemplate.hasMinerSignature()) {
         if (m_pool.spendSecretKey().isEmpty()) {
@@ -473,6 +482,7 @@ bool xmrig::DaemonClient::parseJob(const rapidjson::Value &params, int *code)
 
     if (m_coin.isValid()) {
         job.setAlgorithm(m_coin.algorithm(m_blocktemplate.majorVersion()));
+    }
     }
 
     if (!job.setBlob(m_blockhashingblob)) {
@@ -555,7 +565,12 @@ int64_t xmrig::DaemonClient::getBlockTemplate()
 
     Value params(kObjectType);
     params.AddMember("wallet_address", m_user.toJSON(), allocator);
-    params.AddMember("extra_nonce", Cvt::toHex(Cvt::randomBytes(kBlobReserveSize)).toJSON(doc), allocator);
+    if (m_pool.algorithm() == Algorithm::RX_SFX || !m_walletAddress.isValid()) {
+        params.AddMember("reserve_size", static_cast<uint64_t>(kBlobReserveSize), allocator);
+    }
+    else {
+        params.AddMember("extra_nonce", Cvt::toHex(Cvt::randomBytes(kBlobReserveSize)).toJSON(doc), allocator);
+    }
 
     JsonRequest::create(doc, m_sequence, "getblocktemplate", params);
 
