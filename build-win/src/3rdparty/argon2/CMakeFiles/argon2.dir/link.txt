@@ -1,0 +1,2 @@
+/usr/local/bin/x86_64-w64-mingw32-ar qc libargon2.a CMakeFiles/argon2.dir/lib/argon2.c.obj CMakeFiles/argon2.dir/lib/core.c.obj CMakeFiles/argon2.dir/lib/encoding.c.obj CMakeFiles/argon2.dir/lib/genkat.c.obj "CMakeFiles/argon2.dir/lib/impl-select.c.obj" CMakeFiles/argon2.dir/lib/blake2/blake2.c.obj "CMakeFiles/argon2.dir/arch/x86_64/lib/argon2-arch.c.obj"
+/usr/local/bin/x86_64-w64-mingw32-ranlib libargon2.a

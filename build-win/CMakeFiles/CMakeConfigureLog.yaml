@@ -1,0 +1,2295 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    searched_directories:
+      - "/usr/local/bin/uname"
+      - "/System/Cryptexes/App/usr/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake:213 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Windows -  - x86_64
+      The host system is: Darwin - 23.6.0 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    searched_directories:
+      - "/usr/local/bin/gmake"
+      - "/System/Cryptexes/App/usr/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/gmake"
+      - "/usr/local/bin/make"
+      - "/System/Cryptexes/App/usr/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-gcc"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-gcc"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/local/share/cmake/Modules/"
+    found: "/usr/local/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/local/bin/x86_64-w64-mingw32-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/4.4.3/CompilerIdC/a.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-ar"
+      - "ar"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-ar"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-ranlib"
+      - "ranlib"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-strip"
+      - "strip"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-strip"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-ld"
+      - "ld"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-ld"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-nm"
+      - "nm"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-nm"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-objdump"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-readelf"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-dlltool"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-tapi"
+      - "tapi"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    searched_directories:
+      - "/usr/local/bin/x86_64-w64-mingw32-tapi"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-tapi"
+      - "/usr/bin/x86_64-w64-mingw32-tapi"
+      - "/bin/x86_64-w64-mingw32-tapi"
+      - "/usr/sbin/x86_64-w64-mingw32-tapi"
+      - "/sbin/x86_64-w64-mingw32-tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-tapi"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-tapi"
+      - "/usr/local/bin/tapi"
+      - "/System/Cryptexes/App/usr/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-gcc-ar-16.2"
+      - "x86_64-w64-mingw32-gcc-ar-16"
+      - "x86_64-w64-mingw32-gcc-ar16"
+      - "x86_64-w64-mingw32-gcc-ar"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    searched_directories:
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ar16"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ar16"
+    found: "/usr/local/bin/x86_64-w64-mingw32-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "x86_64-w64-mingw32-gcc-ranlib-16"
+      - "x86_64-w64-mingw32-gcc-ranlib16"
+      - "x86_64-w64-mingw32-gcc-ranlib"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    searched_directories:
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ranlib16"
+    found: "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:71 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-g++"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-g++"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/local/share/cmake/Modules/"
+    found: "/usr/local/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/local/bin/x86_64-w64-mingw32-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/4.4.3/CompilerIdCXX/a.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-gcc-ar-16.2"
+      - "x86_64-w64-mingw32-gcc-ar-16"
+      - "x86_64-w64-mingw32-gcc-ar16"
+      - "x86_64-w64-mingw32-gcc-ar"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    searched_directories:
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ar-16.2"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ar-16"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ar16"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ar16"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ar16"
+    found: "/usr/local/bin/x86_64-w64-mingw32-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "x86_64-w64-mingw32-gcc-ranlib-16"
+      - "x86_64-w64-mingw32-gcc-ranlib16"
+      - "x86_64-w64-mingw32-gcc-ranlib"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+    searched_directories:
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ranlib-16.2"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ranlib-16"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ranlib16"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ranlib16"
+    found: "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-g8vJRP"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-g8vJRP"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-g8vJRP'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7934f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7934f.dir/build.make CMakeFiles/cmTC_7934f.dir/build
+        Building C object CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc   -v -o CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/bin/x86_64-w64-mingw32-gcc
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --prefix=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7934f.dir/'
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/cc1 -quiet -v -D_REENTRANT /usr/local/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7934f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccc5ntBx.s
+        GNU C23 (GCC) version 16.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version Apple LLVM 16.0.0 (clang-1600.0.26.6), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/usr/local/include"
+        ignoring duplicate directory "/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 8202699b45001db9bbd387be55b9e7c5
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7934f.dir/'
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as -v -o CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj /var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccc5ntBx.s
+        GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726
+        COMPILER_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_7934f.exe
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7934f.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/bin/x86_64-w64-mingw32-gcc
+        COLLECT_LTO_WRAPPER=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --prefix=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.0 (GCC) 
+        COMPILER_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7934f.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7934f.'
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/collect2 -plugin /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccaMFvpf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_7934f.exe /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0 -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib -v --whole-archive CMakeFiles/cmTC_7934f.dir/objects.a --no-whole-archive --out-implib libcmTC_7934f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        collect2 version 16.2.0
+        /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld -plugin /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccaMFvpf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_7934f.exe /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0 -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib -v --whole-archive CMakeFiles/cmTC_7934f.dir/objects.a --no-whole-archive --out-implib libcmTC_7934f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.47.20260726
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7934f.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7934f.'
+        /usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_7934f.dir/objects.a
+        /usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_7934f.dir/objects.a @CMakeFiles/cmTC_7934f.dir/objects1.rsp
+        /usr/local/bin/x86_64-w64-mingw32-gcc  -v -Wl,-v -Wl,--whole-archive CMakeFiles/cmTC_7934f.dir/objects.a -Wl,--no-whole-archive -o cmTC_7934f.exe -Wl,--out-implib,libcmTC_7934f.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+          add: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+          add: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+        collapse include dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+        collapse include dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include]
+        implicit include dirs: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-g8vJRP']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7934f/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7934f.dir/build.make CMakeFiles/cmTC_7934f.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/usr/local/bin/x86_64-w64-mingw32-gcc   -v -o CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/bin/x86_64-w64-mingw32-gcc]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --prefix=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7934f.dir/']
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/cc1 -quiet -v -D_REENTRANT /usr/local/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7934f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccc5ntBx.s]
+        ignore line: [GNU C23 (GCC) version 16.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version Apple LLVM 16.0.0 (clang-1600.0.26.6)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 8202699b45001db9bbd387be55b9e7c5]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7934f.dir/']
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as -v -o CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj /var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccc5ntBx.s]
+        ignore line: [GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726]
+        ignore line: [COMPILER_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7934f.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_7934f.exe]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7934f.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/bin/x86_64-w64-mingw32-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --prefix=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7934f.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7934f.']
+        link line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/collect2 -plugin /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccaMFvpf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_7934f.exe /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0 -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib -v --whole-archive CMakeFiles/cmTC_7934f.dir/objects.a --no-whole-archive --out-implib libcmTC_7934f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccaMFvpf.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_7934f.exe] ==> ignore
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o] ==> obj [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib]
+          arg [-v] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_7934f.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_7934f.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> obj [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        ignore line: [collect2 version 16.2.0]
+        ignore line: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld -plugin /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccaMFvpf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_7934f.exe /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0 -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib -v --whole-archive CMakeFiles/cmTC_7934f.dir/objects.a --no-whole-archive --out-implib libcmTC_7934f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        ignore line: [GNU ld (GNU Binutils) 2.47.20260726]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7934f.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7934f.']
+        ignore line: [/usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_7934f.dir/objects.a]
+        ignore line: [/usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_7934f.dir/objects.a @CMakeFiles/cmTC_7934f.dir/objects1.rsp]
+        ignore line: [/usr/local/bin/x86_64-w64-mingw32-gcc  -v -Wl -v -Wl --whole-archive CMakeFiles/cmTC_7934f.dir/objects.a -Wl --no-whole-archive -o cmTC_7934f.exe -Wl --out-implib libcmTC_7934f.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: []
+        ignore line: []
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse obj [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib/crt2.o]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib]
+        implicit libs: [mingw32;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;mingwex;kernel32]
+        implicit objs: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib/crt2.o;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        implicit dirs: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-FzKx9j"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-FzKx9j"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-FzKx9j'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f6e7e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f6e7e.dir/build.make CMakeFiles/cmTC_f6e7e.dir/build
+        Building CXX object CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj
+        /usr/local/bin/x86_64-w64-mingw32-g++   -v -o CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/bin/x86_64-w64-mingw32-g++
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --prefix=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6e7e.dir/'
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/cc1plus -quiet -v -D_REENTRANT /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f6e7e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//cc3fVsHb.s
+        GNU C++20 (GCC) version 16.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version Apple LLVM 16.0.0 (clang-1600.0.26.6), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/usr/local/include"
+        ignoring duplicate directory "/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0/backward
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 3892f340eb6f6aee9393780db46dc1c1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6e7e.dir/'
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as -v -o CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//cc3fVsHb.s
+        GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726
+        COMPILER_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_f6e7e.exe
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6e7e.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/bin/x86_64-w64-mingw32-g++
+        COLLECT_LTO_WRAPPER=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --prefix=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.2.0 (GCC) 
+        COMPILER_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6e7e.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f6e7e.'
+         /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/collect2 -plugin /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccHUL98a.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_f6e7e.exe /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0 -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib -v --whole-archive CMakeFiles/cmTC_f6e7e.dir/objects.a --no-whole-archive --out-implib libcmTC_f6e7e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        collect2 version 16.2.0
+        /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld -plugin /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccHUL98a.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_f6e7e.exe /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0 -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib -v --whole-archive CMakeFiles/cmTC_f6e7e.dir/objects.a --no-whole-archive --out-implib libcmTC_f6e7e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.47.20260726
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6e7e.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f6e7e.'
+        /usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_f6e7e.dir/objects.a
+        /usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_f6e7e.dir/objects.a @CMakeFiles/cmTC_f6e7e.dir/objects1.rsp
+        /usr/local/bin/x86_64-w64-mingw32-g++  -v -Wl,-v -Wl,--whole-archive CMakeFiles/cmTC_f6e7e.dir/objects.a -Wl,--no-whole-archive -o cmTC_f6e7e.exe -Wl,--out-implib,libcmTC_f6e7e.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0]
+          add: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32]
+          add: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0/backward]
+          add: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+          add: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+          add: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/c++/16.2.0]
+        collapse include dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32]
+        collapse include dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0/backward] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/c++/16.2.0/backward]
+        collapse include dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+        collapse include dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+        collapse include dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include]
+        implicit include dirs: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/c++/16.2.0;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/c++/16.2.0/backward;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-FzKx9j']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f6e7e/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f6e7e.dir/build.make CMakeFiles/cmTC_f6e7e.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/usr/local/bin/x86_64-w64-mingw32-g++   -v -o CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/bin/x86_64-w64-mingw32-g++]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --prefix=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6e7e.dir/']
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/cc1plus -quiet -v -D_REENTRANT /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f6e7e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//cc3fVsHb.s]
+        ignore line: [GNU C++20 (GCC) version 16.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version Apple LLVM 16.0.0 (clang-1600.0.26.6)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0]
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0/x86_64-w64-mingw32]
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include/c++/16.2.0/backward]
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include]
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 3892f340eb6f6aee9393780db46dc1c1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6e7e.dir/']
+        ignore line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as -v -o CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//cc3fVsHb.s]
+        ignore line: [GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726]
+        ignore line: [COMPILER_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6e7e.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_f6e7e.exe]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6e7e.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/bin/x86_64-w64-mingw32-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure --target=x86_64-w64-mingw32 --with-sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --prefix=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --enable-languages=c,c++,objc,obj-c++,fortran --with-ld=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld --with-as=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-as --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-system-zlib --with-zstd --disable-multilib --disable-nls --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/:/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6e7e.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f6e7e.']
+        link line: [ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/collect2 -plugin /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccHUL98a.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_f6e7e.exe /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0 -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib -v --whole-archive CMakeFiles/cmTC_f6e7e.dir/objects.a --no-whole-archive --out-implib libcmTC_f6e7e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccHUL98a.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_f6e7e.exe] ==> ignore
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o] ==> obj [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib] ==> dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib]
+          arg [-v] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_f6e7e.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_f6e7e.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> obj [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        ignore line: [collect2 version 16.2.0]
+        ignore line: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/bin/x86_64-w64-mingw32-ld -plugin /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.so -plugin-opt=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/libexec/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/b8/w_r5rr556jjcykxq7mjv0t9m0000gn/T//ccHUL98a.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64 -m i386pep -Bdynamic -o cmTC_f6e7e.exe /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0 -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -L/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib -v --whole-archive CMakeFiles/cmTC_f6e7e.dir/objects.a --no-whole-archive --out-implib libcmTC_f6e7e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        ignore line: [GNU ld (GNU Binutils) 2.47.20260726]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6e7e.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f6e7e.']
+        ignore line: [/usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_f6e7e.dir/objects.a]
+        ignore line: [/usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_f6e7e.dir/objects.a @CMakeFiles/cmTC_f6e7e.dir/objects1.rsp]
+        ignore line: [/usr/local/bin/x86_64-w64-mingw32-g++  -v -Wl -v -Wl --whole-archive CMakeFiles/cmTC_f6e7e.dir/objects.a -Wl --no-whole-archive -o cmTC_f6e7e.exe -Wl --out-implib libcmTC_f6e7e.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: []
+        ignore line: []
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib/crt2.o]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib/../lib] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib]
+        collapse library dir [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib] ==> [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32]
+        implicit objs: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib/crt2.o;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        implicit dirs: [/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/lib;/usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/mingw/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "cmake/cpu.cmake:17 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:46 (include)"
+    checks:
+      - "Performing Test VAES_SUPPORTED"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-B1SqUR"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-B1SqUR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "VAES_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-B1SqUR'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a6fd3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a6fd3.dir/build.make CMakeFiles/cmTC_a6fd3.dir/build
+        Building CXX object CMakeFiles/cmTC_a6fd3.dir/src.cxx.obj
+        /usr/local/bin/x86_64-w64-mingw32-g++ -DVAES_SUPPORTED  -mavx2 -mvaes -o CMakeFiles/cmTC_a6fd3.dir/src.cxx.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-B1SqUR/src.cxx
+        Linking CXX executable cmTC_a6fd3.exe
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6fd3.dir/link.txt --verbose=1
+        /usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_a6fd3.dir/objects.a
+        /usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_a6fd3.dir/objects.a @CMakeFiles/cmTC_a6fd3.dir/objects1.rsp
+        /usr/local/bin/x86_64-w64-mingw32-g++ -Wl,--whole-archive CMakeFiles/cmTC_a6fd3.dir/objects.a -Wl,--no-whole-archive -o cmTC_a6fd3.exe -Wl,--out-implib,libcmTC_a6fd3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_a6fd3.dir/linkLibs.rsp
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:171 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckSymbolExists.cmake:99 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/randomx.cmake:5 (check_symbol_exists)"
+      - "CMakeLists.txt:201 (include)"
+    checks:
+      - "Looking for _aligned_malloc"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-pebfbz"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-pebfbz"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "HAVE_ALIGNED_MALLOC"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-pebfbz'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a0326/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a0326.dir/build.make CMakeFiles/cmTC_a0326.dir/build
+        Building C object CMakeFiles/cmTC_a0326.dir/CheckSymbolExists.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc   -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_a0326.dir/CheckSymbolExists.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-pebfbz/CheckSymbolExists.c
+        Linking C executable cmTC_a0326.exe
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0326.dir/link.txt --verbose=1
+        /usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_a0326.dir/objects.a
+        /usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_a0326.dir/objects.a @CMakeFiles/cmTC_a0326.dir/objects1.rsp
+        /usr/local/bin/x86_64-w64-mingw32-gcc  -Wall -Wno-strict-aliasing -maes   -static  -Wl,--whole-archive CMakeFiles/cmTC_a0326.dir/objects.a -Wl,--no-whole-archive -o cmTC_a0326.exe -Wl,--out-implib,libcmTC_a0326.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_a0326.dir/linkLibs.rsp
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:69 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_sse2_NOFLAG"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-wpoplZ"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-wpoplZ"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "FEATURE_sse2_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-wpoplZ'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c02a8/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c02a8.dir/build.make CMakeFiles/cmTC_c02a8.dir/build
+        Building C object CMakeFiles/cmTC_c02a8.dir/src.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc -DFEATURE_sse2_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_c02a8.dir/src.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-wpoplZ/src.c
+        Linking C executable cmTC_c02a8.exe
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c02a8.dir/link.txt --verbose=1
+        /usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_c02a8.dir/objects.a
+        /usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_c02a8.dir/objects.a @CMakeFiles/cmTC_c02a8.dir/objects1.rsp
+        /usr/local/bin/x86_64-w64-mingw32-gcc  -Wall -Wno-strict-aliasing -maes   -static  -Wl,--whole-archive CMakeFiles/cmTC_c02a8.dir/objects.a -Wl,--no-whole-archive -o cmTC_c02a8.exe -Wl,--out-implib,libcmTC_c02a8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_c02a8.dir/linkLibs.rsp
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:70 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_ssse3_NOFLAG"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-ryFFlm"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-ryFFlm"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "FEATURE_ssse3_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-ryFFlm'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0f693/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0f693.dir/build.make CMakeFiles/cmTC_0f693.dir/build
+        Building C object CMakeFiles/cmTC_0f693.dir/src.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc -DFEATURE_ssse3_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_0f693.dir/src.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-ryFFlm/src.c
+        In file included from /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/immintrin.h:37,
+                         from /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/x86intrin.h:32,
+                         from /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-ryFFlm/src.c:1:
+        /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/tmmintrin.h: In function 'function_ssse3':
+        /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/tmmintrin.h:136:1: error: inlining failed in call to 'always_inline' '_mm_shuffle_epi8': target specific option mismatch
+          136 | _mm_shuffle_epi8 (__m128i __X, __m128i __Y)
+              | ^~~~~~~~~~~~~~~~
+        /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-ryFFlm/src.c:5:12: note: called from here
+            5 |     *dst = _mm_shuffle_epi8(*a, *b);
+              |            ^~~~~~~~~~~~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_0f693.dir/src.c.obj] Error 1
+        make: *** [cmTC_0f693/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:70 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_ssse3_FLAG"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-76IRdx"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-76IRdx"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "FEATURE_ssse3_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-76IRdx'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fa9d3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fa9d3.dir/build.make CMakeFiles/cmTC_fa9d3.dir/build
+        Building C object CMakeFiles/cmTC_fa9d3.dir/src.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc -DFEATURE_ssse3_FLAG  -Wall -Wno-strict-aliasing -maes -mssse3 -std=gnu99 -o CMakeFiles/cmTC_fa9d3.dir/src.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-76IRdx/src.c
+        Linking C executable cmTC_fa9d3.exe
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa9d3.dir/link.txt --verbose=1
+        /usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_fa9d3.dir/objects.a
+        /usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_fa9d3.dir/objects.a @CMakeFiles/cmTC_fa9d3.dir/objects1.rsp
+        /usr/local/bin/x86_64-w64-mingw32-gcc  -Wall -Wno-strict-aliasing -maes -mssse3  -static  -Wl,--whole-archive CMakeFiles/cmTC_fa9d3.dir/objects.a -Wl,--no-whole-archive -o cmTC_fa9d3.exe -Wl,--out-implib,libcmTC_fa9d3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fa9d3.dir/linkLibs.rsp
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:71 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_xop_NOFLAG"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-t3BKqB"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-t3BKqB"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "FEATURE_xop_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-t3BKqB'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3d0d5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3d0d5.dir/build.make CMakeFiles/cmTC_3d0d5.dir/build
+        Building C object CMakeFiles/cmTC_3d0d5.dir/src.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc -DFEATURE_xop_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_3d0d5.dir/src.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-t3BKqB/src.c
+        In file included from /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/x86intrin.h:38,
+                         from /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-t3BKqB/src.c:1:
+        /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-t3BKqB/src.c: In function 'function_xop':
+        /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-t3BKqB/src.c:5:12: error: '__builtin_ia32_vprotqi' needs isa option -mxop
+            5 |     *dst = _mm_roti_epi64(*a, b);
+              |            ^~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_3d0d5.dir/src.c.obj] Error 1
+        make: *** [cmTC_3d0d5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:71 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_xop_FLAG"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-0ChTNp"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-0ChTNp"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "FEATURE_xop_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-0ChTNp'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_11131/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_11131.dir/build.make CMakeFiles/cmTC_11131.dir/build
+        Building C object CMakeFiles/cmTC_11131.dir/src.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc -DFEATURE_xop_FLAG  -Wall -Wno-strict-aliasing -maes -mxop -std=gnu99 -o CMakeFiles/cmTC_11131.dir/src.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-0ChTNp/src.c
+        Linking C executable cmTC_11131.exe
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11131.dir/link.txt --verbose=1
+        /usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_11131.dir/objects.a
+        /usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_11131.dir/objects.a @CMakeFiles/cmTC_11131.dir/objects1.rsp
+        /usr/local/bin/x86_64-w64-mingw32-gcc  -Wall -Wno-strict-aliasing -maes -mxop  -static  -Wl,--whole-archive CMakeFiles/cmTC_11131.dir/objects.a -Wl,--no-whole-archive -o cmTC_11131.exe -Wl,--out-implib,libcmTC_11131.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_11131.dir/linkLibs.rsp
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:72 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx2_NOFLAG"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-dUlqSX"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-dUlqSX"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "FEATURE_avx2_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-dUlqSX'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ca8ca/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ca8ca.dir/build.make CMakeFiles/cmTC_ca8ca.dir/build
+        Building C object CMakeFiles/cmTC_ca8ca.dir/src.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc -DFEATURE_avx2_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_ca8ca.dir/src.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-dUlqSX/src.c
+        /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-dUlqSX/src.c: In function 'function_avx2':
+        /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-dUlqSX/src.c:5:10: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+            5 |     *dst = _mm256_xor_si256(*a, *b);
+              |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+        In file included from /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/immintrin.h:53,
+                         from /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/x86intrin.h:32,
+                         from /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-dUlqSX/src.c:1:
+        /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/avx2intrin.h:913:1: error: inlining failed in call to 'always_inline' '_mm256_xor_si256': target specific option mismatch
+          913 | _mm256_xor_si256 (__m256i __A, __m256i __B)
+              | ^~~~~~~~~~~~~~~~
+        /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-dUlqSX/src.c:5:12: note: called from here
+            5 |     *dst = _mm256_xor_si256(*a, *b);
+              |            ^~~~~~~~~~~~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_ca8ca.dir/src.c.obj] Error 1
+        make: *** [cmTC_ca8ca/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:72 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx2_FLAG"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-e22XnZ"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-e22XnZ"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "FEATURE_avx2_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-e22XnZ'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2efb5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2efb5.dir/build.make CMakeFiles/cmTC_2efb5.dir/build
+        Building C object CMakeFiles/cmTC_2efb5.dir/src.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc -DFEATURE_avx2_FLAG  -Wall -Wno-strict-aliasing -maes -mavx2 -std=gnu99 -o CMakeFiles/cmTC_2efb5.dir/src.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-e22XnZ/src.c
+        Linking C executable cmTC_2efb5.exe
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2efb5.dir/link.txt --verbose=1
+        /usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_2efb5.dir/objects.a
+        /usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_2efb5.dir/objects.a @CMakeFiles/cmTC_2efb5.dir/objects1.rsp
+        /usr/local/bin/x86_64-w64-mingw32-gcc  -Wall -Wno-strict-aliasing -maes -mavx2  -static  -Wl,--whole-archive CMakeFiles/cmTC_2efb5.dir/objects.a -Wl,--no-whole-archive -o cmTC_2efb5.exe -Wl,--out-implib,libcmTC_2efb5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_2efb5.dir/linkLibs.rsp
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:73 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx512f_NOFLAG"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-woexQA"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-woexQA"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "FEATURE_avx512f_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-woexQA'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3d03f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3d03f.dir/build.make CMakeFiles/cmTC_3d03f.dir/build
+        Building C object CMakeFiles/cmTC_3d03f.dir/src.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc -DFEATURE_avx512f_NOFLAG  -Wall -Wno-strict-aliasing -maes  -std=gnu99 -o CMakeFiles/cmTC_3d03f.dir/src.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-woexQA/src.c
+        In file included from /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/immintrin.h:55,
+                         from /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/x86intrin.h:32,
+                         from /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-woexQA/src.c:1:
+        /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/avx512fintrin.h: In function 'function_avx512f':
+        /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/avx512fintrin.h:3976:1: error: inlining failed in call to 'always_inline' '_mm512_undefined_epi32': target specific option mismatch
+         3976 | _mm512_undefined_epi32 (void)
+              | ^~~~~~~~~~~~~~~~~~~~~~
+        /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-woexQA/src.c:5:12: note: called from here
+            5 |     *dst = _mm512_ror_epi64(*a, 57);
+              |            ^~~~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_3d03f.dir/src.c.obj] Error 1
+        make: *** [cmTC_3d03f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/usr/local/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:73 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx512f_FLAG"
+    directories:
+      source: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-R2fpqI"
+      binary: "/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-R2fpqI"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -Wno-strict-aliasing -maes"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static"
+      CMAKE_MODULE_PATH: "/Users/miroslavgalic/projekti/xmrig/cmake"
+    buildResult:
+      variable: "FEATURE_avx512f_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-R2fpqI'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_469a9/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_469a9.dir/build.make CMakeFiles/cmTC_469a9.dir/build
+        Building C object CMakeFiles/cmTC_469a9.dir/src.c.obj
+        /usr/local/bin/x86_64-w64-mingw32-gcc -DFEATURE_avx512f_FLAG  -Wall -Wno-strict-aliasing -maes -mavx512f -std=gnu99 -o CMakeFiles/cmTC_469a9.dir/src.c.obj -c /Users/miroslavgalic/projekti/xmrig/build-win/CMakeFiles/CMakeScratch/TryCompile-R2fpqI/src.c
+        Linking C executable cmTC_469a9.exe
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_469a9.dir/link.txt --verbose=1
+        /usr/local/bin/cmake -E rm -f CMakeFiles/cmTC_469a9.dir/objects.a
+        /usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_469a9.dir/objects.a @CMakeFiles/cmTC_469a9.dir/objects1.rsp
+        /usr/local/bin/x86_64-w64-mingw32-gcc  -Wall -Wno-strict-aliasing -maes -mavx512f  -static  -Wl,--whole-archive CMakeFiles/cmTC_469a9.dir/objects.a -Wl,--no-whole-archive -o cmTC_469a9.exe -Wl,--out-implib,libcmTC_469a9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_469a9.dir/linkLibs.rsp
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:61 (_cmake_find_compiler)"
+      - "cmake/asm.cmake:21 (enable_language)"
+      - "CMakeLists.txt:206 (include)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER"
+    description: "ASM compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc"
+    candidate_directories:
+      - "/usr/local/bin/"
+    found: "/usr/local/bin/x86_64-w64-mingw32-gcc"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr/local"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1328 (message)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/asm.cmake:21 (enable_language)"
+      - "CMakeLists.txt:206 (include)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      x86_64-w64-mingw32-gcc (GCC) 16.2.0
+      Copyright (C) 2026 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:271 (include)"
+      - "cmake/asm.cmake:21 (enable_language)"
+      - "CMakeLists.txt:206 (include)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-gcc-ar-"
+      - "x86_64-w64-mingw32-gcc-ar-"
+      - "x86_64-w64-mingw32-gcc-ar"
+      - "x86_64-w64-mingw32-gcc-ar"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ar-"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/local/sbin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/local/x86_64-w64-mingw32-gcc-ar-"
+      - "/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ar-"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/local/sbin/x86_64-w64-mingw32-gcc-ar-"
+      - "/usr/local/x86_64-w64-mingw32-gcc-ar-"
+      - "/bin/x86_64-w64-mingw32-gcc-ar-"
+      - "/sbin/x86_64-w64-mingw32-gcc-ar-"
+    found: "/usr/local/bin/x86_64-w64-mingw32-gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr/local"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/local/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/local/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:271 (include)"
+      - "cmake/asm.cmake:21 (enable_language)"
+      - "CMakeLists.txt:206 (include)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-w64-mingw32-gcc-ranlib-"
+      - "x86_64-w64-mingw32-gcc-ranlib-"
+      - "x86_64-w64-mingw32-gcc-ranlib"
+      - "x86_64-w64-mingw32-gcc-ranlib"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/bin/"
+      - "/sbin/"
+    searched_directories:
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/local/sbin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/local/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/System/Cryptexes/App/usr/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/sbin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/local/sbin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/usr/local/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/bin/x86_64-w64-mingw32-gcc-ranlib-"
+      - "/sbin/x86_64-w64-mingw32-gcc-ranlib-"
+    found: "/usr/local/bin/x86_64-w64-mingw32-gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr/local"
+        - "/"
+      CMAKE_FIND_ROOT_PATH: "/opt/homebrew/toolchains/mingw-w64;/usr/local/toolchains/mingw-w64;/tmp/win-cross/prefix"
+...

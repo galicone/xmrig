@@ -1,0 +1,27 @@
+CMakeFiles/xmrig-notls.dir/src/crypto/randomx/jit_compiler_x86_static.S.obj: \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/jit_compiler_x86_static.S \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_prologue_win64.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_xmm_constants.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_imul_rcp_store.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_loop_load.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_loop_load_xop.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_read_dataset.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_read_dataset_v2.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_read_dataset_sshash_init.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_read_dataset_sshash_fin.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_loop_store.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_loop_store_hard_aes.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_loop_store_soft_aes.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_avx2_save_registers.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_avx2_constants.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_avx2_loop_begin.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_avx2_loop_end.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_avx2_epilogue.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_avx2_ssh_load.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_avx2_ssh_prefetch.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_epilogue_store.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_epilogue_win64.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_load.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_prefetch.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/program_sshash_constants.inc \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/randomx/asm/randomx_reciprocal.inc

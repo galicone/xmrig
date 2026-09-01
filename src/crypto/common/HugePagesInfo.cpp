@@ -21,6 +21,9 @@
 #include "crypto/common/VirtualMemory.h"
 
 
+#include <algorithm>
+
+
 xmrig::HugePagesInfo::HugePagesInfo(const VirtualMemory *memory)
 {
     if (memory->isOneGbPages()) {
@@ -31,6 +34,6 @@ xmrig::HugePagesInfo::HugePagesInfo(const VirtualMemory *memory)
     else {
         size        = VirtualMemory::alignToHugePageSize(memory->size());
         total       = size / VirtualMemory::hugePageSize();
-        allocated   = memory->isHugePages() ? total : 0;
+        allocated   = std::min(total, memory->hugePagesCount());
     }
 }

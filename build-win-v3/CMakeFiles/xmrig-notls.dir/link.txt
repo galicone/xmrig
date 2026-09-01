@@ -1,0 +1,3 @@
+/usr/local/bin/cmake -E rm -f CMakeFiles/xmrig-notls.dir/objects.a
+/usr/local/bin/x86_64-w64-mingw32-ar qc CMakeFiles/xmrig-notls.dir/objects.a @CMakeFiles/xmrig-notls.dir/objects1.rsp
+/usr/local/bin/x86_64-w64-mingw32-g++ -march=x86-64-v3 -mtune=generic -Wall -fexceptions -fno-rtti -Wno-strict-aliasing -Wno-class-memaccess -maes -O3 -DNDEBUG -Ofast -s  -static -Wl,--whole-archive CMakeFiles/xmrig-notls.dir/objects.a -Wl,--no-whole-archive -o xmrig-notls.exe -Wl,--out-implib,libxmrig-notls.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/xmrig-notls.dir/linkLibs.rsp

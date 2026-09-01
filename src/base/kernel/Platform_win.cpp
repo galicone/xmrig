@@ -167,6 +167,14 @@ void xmrig::Platform::setThreadPriority(int priority)
 }
 
 
+void xmrig::Platform::preventSleep()
+{
+    // Prevent idle system sleep so mining continues unattended.
+    // The display may still turn off.
+    SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED);
+}
+
+
 bool xmrig::Platform::isOnBatteryPower()
 {
     SYSTEM_POWER_STATUS st;

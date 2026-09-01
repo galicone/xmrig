@@ -157,6 +157,11 @@ void xmrig::Platform::setThreadPriority(int priority)
 }
 
 
+void xmrig::Platform::preventSleep()
+{
+}
+
+
 bool xmrig::Platform::isOnBatteryPower()
 {
     for (int i = 0; i <= 1; ++i) {

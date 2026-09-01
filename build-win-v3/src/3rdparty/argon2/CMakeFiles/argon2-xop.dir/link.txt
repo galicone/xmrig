@@ -1,0 +1,2 @@
+/usr/local/bin/x86_64-w64-mingw32-ar qc libargon2-xop.a "CMakeFiles/argon2-xop.dir/arch/x86_64/lib/argon2-xop.c.obj"
+/usr/local/bin/x86_64-w64-mingw32-ranlib libargon2-xop.a

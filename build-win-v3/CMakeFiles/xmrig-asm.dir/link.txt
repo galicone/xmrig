@@ -1,0 +1,2 @@
+/usr/local/bin/x86_64-w64-mingw32-ar qc libxmrig-asm.a "CMakeFiles/xmrig-asm.dir/src/crypto/cn/asm/win64/cn_main_loop.S.obj" "CMakeFiles/xmrig-asm.dir/src/crypto/cn/asm/CryptonightR_template.S.obj"
+/usr/local/bin/x86_64-w64-mingw32-ranlib libxmrig-asm.a

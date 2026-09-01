@@ -57,6 +57,7 @@ public:
 
     static bool isOnBatteryPower();
     static uint64_t idleTime();
+    static void preventSleep();
 
 private:
     static char *createUserAgent();

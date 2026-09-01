@@ -48,6 +48,18 @@ public:
     inline bool isHugePages() const                                 { return m_flags.test(FLAG_HUGEPAGES); }
     inline bool isOneGbPages() const                                { return m_flags.test(FLAG_1GB_PAGES); }
     inline size_t size() const                                      { return m_size; }
+
+    // Number of 2MB pages actually backed by huge pages. On most platforms allocation is
+    // all-or-nothing, but macOS x86 can end up with a partially superpage-backed region.
+    inline size_t hugePagesCount() const
+    {
+        if (!isHugePages()) {
+            return 0;
+        }
+
+        return m_hugePagesCount ? m_hugePagesCount : alignToHugePageSize(m_size) / hugePageSize();
+    }
+
     inline size_t capacity() const                                  { return m_capacity; }
     inline uint8_t *raw() const                                     { return m_scratchpad; }
     inline uint8_t *scratchpad() const                              { return m_scratchpad; }
@@ -95,6 +107,7 @@ private:
     const size_t m_size;
     const uint32_t m_node;
     size_t m_capacity;
+    size_t m_hugePagesCount = 0;
     std::bitset<FLAG_MAX> m_flags;
     uint8_t *m_scratchpad = nullptr;
 };

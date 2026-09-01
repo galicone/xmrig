@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/miroslavgalic/projekti/xmrig/res/app.rc
+windows.h
+-
+../src/version.h
+/Users/miroslavgalic/projekti/xmrig/src/version.h
+
+/Users/miroslavgalic/projekti/xmrig/src/version.h
+

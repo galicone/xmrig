@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ghostrider.dir/ghostrider.cpp.obj"
+  "CMakeFiles/ghostrider.dir/ghostrider.cpp.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_blake.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_blake.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_bmw.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_bmw.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_cubehash.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_cubehash.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_echo.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_echo.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_fugue.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_fugue.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_groestl.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_groestl.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_hamsi.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_hamsi.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_jh.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_jh.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_keccak.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_keccak.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_luffa.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_luffa.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_sha2.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_sha2.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_shabal.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_shabal.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_shavite.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_shavite.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_simd.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_simd.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_skein.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_skein.c.obj.d"
+  "CMakeFiles/ghostrider.dir/sph_whirlpool.c.obj"
+  "CMakeFiles/ghostrider.dir/sph_whirlpool.c.obj.d"
+  "libghostrider.a"
+  "libghostrider.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/ghostrider.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

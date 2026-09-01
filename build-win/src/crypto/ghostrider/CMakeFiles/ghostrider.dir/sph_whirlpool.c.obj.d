@@ -1,0 +1,20 @@
+src/crypto/ghostrider/CMakeFiles/ghostrider.dir/sph_whirlpool.c.obj: \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/ghostrider/sph_whirlpool.c \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stddef.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/stddef.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/crtdefs.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/corecrt.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/_mingw.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/vadefs.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/string.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/ghostrider/sph_whirlpool.h \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/ghostrider/sph_types.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/limits.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/syslimits.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/limits.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stdint.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/stdint.h \
+ /Users/miroslavgalic/projekti/xmrig/src/crypto/ghostrider/md_helper.c

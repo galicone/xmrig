@@ -24,9 +24,28 @@
 #include <tchar.h>
 
 
+#include <cstdint>
+#include <map>
+#include <mutex>
+#include <utility>
+
+
 #include "crypto/common/VirtualMemory.h"
 #include "base/io/log/Log.h"
 #include "crypto/common/portable/mm_malloc.h"
+
+
+#ifndef MEM_REPLACE_PLACEHOLDER
+#   define MEM_REPLACE_PLACEHOLDER  0x00004000
+#endif
+
+#ifndef MEM_RESERVE_PLACEHOLDER
+#   define MEM_RESERVE_PLACEHOLDER  0x00040000
+#endif
+
+#ifndef MEM_PRESERVE_PLACEHOLDER
+#   define MEM_PRESERVE_PLACEHOLDER 0x00000002
+#endif
 
 
 #ifdef XMRIG_SECURE_JIT
@@ -147,6 +166,162 @@ static BOOL TrySetLockPagesPrivilege() {
 }
 
 
+// VirtualAlloc2 is loaded dynamically so the binary still runs on Windows
+// versions that lack it (pre-1803); those fall back to all-or-nothing allocation.
+typedef PVOID (WINAPI *VirtualAlloc2_t)(HANDLE, PVOID, SIZE_T, ULONG, ULONG, PVOID, ULONG);
+
+static VirtualAlloc2_t resolveVirtualAlloc2()
+{
+    static VirtualAlloc2_t func = []() -> VirtualAlloc2_t {
+        HMODULE module = GetModuleHandleA("kernelbase.dll");
+
+        return module ? reinterpret_cast<VirtualAlloc2_t>(GetProcAddress(module, "VirtualAlloc2")) : nullptr;
+    }();
+
+    return func;
+}
+
+
+// Regions assembled from individual placeholder-backed chunks must be released
+// chunk by chunk, so remember their layout.
+static std::mutex chunkedRegionsMutex;
+static std::map<void *, std::pair<size_t, size_t> > chunkedRegions; // base -> {chunk size, chunk count}
+
+
+static void releaseChunks(uint8_t *base, size_t chunkSize, size_t count)
+{
+    for (size_t i = 0; i < count; ++i) {
+        VirtualFree(base + i * chunkSize, 0, MEM_RELEASE);
+    }
+}
+
+
+// Windows grants large pages only when it can find free contiguous physical memory,
+// so a single all-or-nothing VirtualAlloc of the whole region (2336 MB for the RandomX
+// dataset) usually fails once memory is fragmented. Instead, reserve a placeholder
+// region and replace it chunk by chunk, keeping every large-page chunk the kernel
+// gives us and falling back to normal pages for the rest.
+static void *allocateLargePagesBestEffort(size_t size, size_t *hugePagesCount)
+{
+    const size_t chunkSize = GetLargePageMinimum();
+    if (chunkSize == 0) {
+        return nullptr;
+    }
+
+    size = xmrig::VirtualMemory::align(size, chunkSize);
+
+    void *mem = VirtualAlloc(nullptr, size, MEM_COMMIT | MEM_RESERVE | MEM_LARGE_PAGES, PAGE_READWRITE);
+    if (mem) {
+        if (hugePagesCount) {
+            *hugePagesCount = size / chunkSize;
+        }
+
+        return mem;
+    }
+
+    auto virtualAlloc2 = resolveVirtualAlloc2();
+    if (!virtualAlloc2) {
+        return nullptr;
+    }
+
+    // Over-reserve so a large-page aligned sub-region always exists, then carve off
+    // the unaligned head and tail placeholders and release them.
+    const size_t reserveSize = size + chunkSize;
+    auto base = static_cast<uint8_t *>(virtualAlloc2(GetCurrentProcess(), nullptr, reserveSize, MEM_RESERVE | MEM_RESERVE_PLACEHOLDER, PAGE_NOACCESS, nullptr, 0));
+    if (!base) {
+        return nullptr;
+    }
+
+    auto aligned = reinterpret_cast<uint8_t *>((reinterpret_cast<uintptr_t>(base) + chunkSize - 1) & ~(chunkSize - 1));
+
+    if (aligned > base) {
+        if (!VirtualFree(base, aligned - base, MEM_RELEASE | MEM_PRESERVE_PLACEHOLDER)) {
+            VirtualFree(base, 0, MEM_RELEASE);
+
+            return nullptr;
+        }
+
+        VirtualFree(base, 0, MEM_RELEASE);
+    }
+
+    if (const size_t tail = (base + reserveSize) - (aligned + size)) {
+        if (!VirtualFree(aligned, size, MEM_RELEASE | MEM_PRESERVE_PLACEHOLDER)) {
+            VirtualFree(aligned, 0, MEM_RELEASE);
+
+            return nullptr;
+        }
+
+        VirtualFree(aligned + size, 0, MEM_RELEASE);
+    }
+
+    const size_t count          = size / chunkSize;
+    size_t hugeCount            = 0;
+    size_t consecutiveFailures  = 0;
+
+    // Each rejected large-page request is slow (the kernel scans for contiguous
+    // memory), so once a long run of chunks fails assume physical memory is too
+    // fragmented and stop asking; a success resets the counter.
+    constexpr size_t maxConsecutiveFailures = 8;
+
+    for (size_t i = 0; i < count; ++i) {
+        uint8_t *addr = aligned + i * chunkSize;
+
+        // Split the current chunk off the remaining placeholder (except the last one,
+        // which already has the right size).
+        if (i + 1 < count && !VirtualFree(addr, chunkSize, MEM_RELEASE | MEM_PRESERVE_PLACEHOLDER)) {
+            releaseChunks(aligned, chunkSize, i);
+            VirtualFree(addr, 0, MEM_RELEASE);
+
+            return nullptr;
+        }
+
+        void *p = nullptr;
+
+        if (consecutiveFailures < maxConsecutiveFailures) {
+            p = virtualAlloc2(GetCurrentProcess(), addr, chunkSize, MEM_RESERVE | MEM_COMMIT | MEM_REPLACE_PLACEHOLDER | MEM_LARGE_PAGES, PAGE_READWRITE, nullptr, 0);
+        }
+
+        if (p) {
+            ++hugeCount;
+            consecutiveFailures = 0;
+        }
+        else {
+            ++consecutiveFailures;
+
+            if (!virtualAlloc2(GetCurrentProcess(), addr, chunkSize, MEM_RESERVE | MEM_COMMIT | MEM_REPLACE_PLACEHOLDER, PAGE_READWRITE, nullptr, 0)) {
+                releaseChunks(aligned, chunkSize, i);
+                VirtualFree(addr, 0, MEM_RELEASE);
+
+                if (i + 1 < count) {
+                    VirtualFree(addr + chunkSize, 0, MEM_RELEASE);
+                }
+
+                return nullptr;
+            }
+        }
+    }
+
+    // No large pages at all: release the region so the caller uses the regular
+    // allocation path and huge pages are correctly reported as unavailable.
+    if (hugeCount == 0) {
+        releaseChunks(aligned, chunkSize, count);
+
+        return nullptr;
+    }
+
+    {
+        std::lock_guard<std::mutex> lock(chunkedRegionsMutex);
+        chunkedRegions.insert({ aligned, { chunkSize, count } });
+    }
+
+    if (hugePagesCount) {
+        *hugePagesCount = hugeCount;
+    }
+
+    return aligned;
+}
+
+
 } // namespace xmrig
 
 
@@ -204,14 +379,7 @@ void *xmrig::VirtualMemory::allocateExecutableMemory(size_t size, bool hugePages
 
 void *xmrig::VirtualMemory::allocateLargePagesMemory(size_t size)
 {
-    const size_t min = GetLargePageMinimum();
-    void *mem        = nullptr;
-
-    if (min > 0) {
-        mem = VirtualAlloc(nullptr, align(size, min), MEM_COMMIT | MEM_RESERVE | MEM_LARGE_PAGES, PAGE_READWRITE);
-    }
-
-    return mem;
+    return allocateLargePagesBestEffort(size, nullptr);
 }
 
 
@@ -229,6 +397,18 @@ void xmrig::VirtualMemory::flushInstructionCache(void *p, size_t size)
 
 void xmrig::VirtualMemory::freeLargePagesMemory(void *p, size_t)
 {
+    {
+        std::lock_guard<std::mutex> lock(chunkedRegionsMutex);
+
+        const auto it = chunkedRegions.find(p);
+        if (it != chunkedRegions.end()) {
+            releaseChunks(static_cast<uint8_t *>(p), it->second.first, it->second.second);
+            chunkedRegions.erase(it);
+
+            return;
+        }
+    }
+
     VirtualFree(p, 0, MEM_RELEASE);
 }
 
@@ -243,7 +423,7 @@ void xmrig::VirtualMemory::osInit(size_t hugePageSize)
 
 bool xmrig::VirtualMemory::allocateLargePagesMemory()
 {
-    m_scratchpad = static_cast<uint8_t*>(allocateLargePagesMemory(m_size));
+    m_scratchpad = static_cast<uint8_t*>(allocateLargePagesBestEffort(m_size, &m_hugePagesCount));
     if (m_scratchpad) {
         m_flags.set(FLAG_HUGEPAGES, true);
 

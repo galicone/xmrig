@@ -56,4 +56,6 @@ void xmrig::Platform::init(const char *userAgent)
     else {
         m_userAgent = createUserAgent();
     }
+
+    preventSleep();
 }

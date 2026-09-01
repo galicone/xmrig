@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/miroslavgalic/projekti/xmrig/build-win/cmake_install.cmake",
+		"/Users/miroslavgalic/projekti/xmrig/build-win/src/3rdparty/argon2/cmake_install.cmake",
+		"/Users/miroslavgalic/projekti/xmrig/build-win/src/3rdparty/libethash/cmake_install.cmake",
+		"/Users/miroslavgalic/projekti/xmrig/build-win/src/crypto/ghostrider/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

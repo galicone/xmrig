@@ -19,6 +19,9 @@
 
 #include <IOKit/IOKitLib.h>
 #include <IOKit/ps/IOPowerSources.h>
+#include <IOKit/pwr_mgt/IOPMLib.h>
+#include <pthread.h>
+#include <pthread/qos.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/resource.h>
@@ -100,6 +103,57 @@ void xmrig::Platform::setThreadPriority(int priority)
     }
 
     setpriority(PRIO_PROCESS, 0, prio);
+
+    // setpriority() with a negative nice value fails silently without root, so also set
+    // the thread QoS class, which does not require privileges. Without this, mining
+    // threads run at default QoS and lose CPU time to Spotlight, backups and other
+    // background daemons.
+    qos_class_t qos = QOS_CLASS_DEFAULT;
+    switch (priority)
+    {
+    case 0:
+        qos = QOS_CLASS_BACKGROUND;
+        break;
+
+    case 1:
+        qos = QOS_CLASS_UTILITY;
+        break;
+
+    case 2:
+        qos = QOS_CLASS_DEFAULT;
+        break;
+
+    case 3:
+        qos = QOS_CLASS_USER_INITIATED;
+        break;
+
+    case 4:
+    case 5:
+        qos = QOS_CLASS_USER_INTERACTIVE;
+        break;
+
+    default:
+        break;
+    }
+
+    pthread_set_qos_class_self_np(qos, 0);
+}
+
+
+void xmrig::Platform::preventSleep()
+{
+    static IOPMAssertionID assertionID = kIOPMNullAssertionID;
+
+    if (assertionID != kIOPMNullAssertionID) {
+        return;
+    }
+
+    // Prevent idle system sleep so mining continues unattended. The display may still
+    // sleep and closing the lid still suspends the machine.
+    IOPMAssertionCreateWithName(kIOPMAssertionTypePreventUserIdleSystemSleep,
+                                kIOPMAssertionLevelOn,
+                                CFSTR("XMRig mining"),
+                                &assertionID);
 }
 
 

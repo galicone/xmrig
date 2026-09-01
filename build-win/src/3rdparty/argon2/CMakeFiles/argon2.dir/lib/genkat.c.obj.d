@@ -1,0 +1,25 @@
+src/3rdparty/argon2/CMakeFiles/argon2.dir/lib/genkat.c.obj: \
+ /Users/miroslavgalic/projekti/xmrig/src/3rdparty/argon2/lib/genkat.c \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/inttypes.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/crtdefs.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/corecrt.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/_mingw.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/vadefs.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stdint.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/stdint.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stddef.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/stddef.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/stdio.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/swprintf.inl \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ /Users/miroslavgalic/projekti/xmrig/src/3rdparty/argon2/lib/genkat.h \
+ /Users/miroslavgalic/projekti/xmrig/src/3rdparty/argon2/lib/core.h \
+ /Users/miroslavgalic/projekti/xmrig/src/3rdparty/argon2/../../3rdparty/argon2.h \
+ /Users/miroslavgalic/projekti/xmrig/src/3rdparty/argon2/../../3rdparty/argon2/include/argon2.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/limits.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/syslimits.h \
+ /usr/local/Cellar/mingw-w64/14.0.0_3/toolchain-x86_64/x86_64-w64-mingw32/include/limits.h

@@ -22,6 +22,7 @@
 #include "crypto/common/portable/mm_malloc.h"
 
 
+#include <algorithm>
 #include <cmath>
 #include <cstdlib>
 #include <fstream>
@@ -176,9 +177,94 @@ void *xmrig::VirtualMemory::allocateExecutableMemory(size_t size, bool hugePages
 }
 
 
+#if defined(XMRIG_OS_APPLE) && !defined(XMRIG_ARM)
+// macOS grants 2MB superpages only when it can find free contiguous physical memory,
+// so a single all-or-nothing mmap of the whole region (2336 MB for the RandomX dataset)
+// almost always fails on a fragmented system. Instead, reserve a superpage-aligned
+// virtual range and map it chunk by chunk, keeping every superpage the kernel gives us
+// and falling back to normal 4K pages for the rest.
+static void *allocateSuperPagesBestEffort(size_t size, size_t *hugePagesCount)
+{
+    constexpr size_t superSize = 2U * 1024U * 1024U;
+
+    void *mem = mmap(0, size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, VM_FLAGS_SUPERPAGE_SIZE_2MB, 0);
+    if (mem != MAP_FAILED) {
+        if (hugePagesCount) {
+            *hugePagesCount = size / superSize;
+        }
+
+        return mem;
+    }
+
+    const size_t reserveSize = size + superSize;
+    auto base = static_cast<uint8_t *>(mmap(0, reserveSize, PROT_NONE, MAP_PRIVATE | MAP_ANON, -1, 0));
+    if (base == MAP_FAILED) {
+        return nullptr;
+    }
+
+    auto aligned = reinterpret_cast<uint8_t *>((reinterpret_cast<uintptr_t>(base) + superSize - 1) & ~(superSize - 1));
+
+    if (aligned > base) {
+        munmap(base, aligned - base);
+    }
+
+    if (const size_t tail = (base + reserveSize) - (aligned + size)) {
+        munmap(aligned + size, tail);
+    }
+
+    size_t hugeCount            = 0;
+    size_t consecutiveFailures  = 0;
+
+    // Each rejected superpage request makes the kernel scan for free contiguous physical
+    // memory, which is slow. Once a long run of chunks fails, assume physical memory is
+    // too fragmented and stop asking; a success resets the counter.
+    constexpr size_t maxConsecutiveFailures = 8;
+
+    for (size_t offset = 0; offset < size; offset += superSize) {
+        const size_t chunk = std::min(superSize, size - offset);
+        void *p            = MAP_FAILED;
+
+        if (chunk == superSize && consecutiveFailures < maxConsecutiveFailures) {
+            p = mmap(aligned + offset, chunk, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON | MAP_FIXED, VM_FLAGS_SUPERPAGE_SIZE_2MB, 0);
+        }
+
+        if (p != MAP_FAILED) {
+            ++hugeCount;
+            consecutiveFailures = 0;
+        }
+        else {
+            ++consecutiveFailures;
+
+            if (mmap(aligned + offset, chunk, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON | MAP_FIXED, -1, 0) == MAP_FAILED) {
+                munmap(aligned, size);
+
+                return nullptr;
+            }
+        }
+    }
+
+    // No superpages at all: release the region so the caller uses the regular
+    // allocation path and huge pages are correctly reported as unavailable.
+    if (hugeCount == 0) {
+        munmap(aligned, size);
+
+        return nullptr;
+    }
+
+    if (hugePagesCount) {
+        *hugePagesCount = hugeCount;
+    }
+
+    return aligned;
+}
+#endif
+
+
 void *xmrig::VirtualMemory::allocateLargePagesMemory(size_t size)
 {
-#   if defined(XMRIG_OS_APPLE)
+#   if defined(XMRIG_OS_APPLE) && !defined(XMRIG_ARM)
+    void *mem = allocateSuperPagesBestEffort(size, nullptr);
+#   elif defined(XMRIG_OS_APPLE)
     void *mem = mmap(0, size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, VM_FLAGS_SUPERPAGE_SIZE_2MB, 0);
 #   elif defined(XMRIG_OS_FREEBSD)
     void *mem = mmap(0, size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS | MAP_ALIGNED_SUPER | MAP_PREFAULT_READ, -1, 0);
@@ -236,7 +322,12 @@ bool xmrig::VirtualMemory::allocateLargePagesMemory()
     LinuxMemory::reserve(m_size, m_node, hugePageSize());
 #   endif
 
+#   if defined(XMRIG_OS_APPLE) && !defined(XMRIG_ARM)
+    m_scratchpad = static_cast<uint8_t*>(allocateSuperPagesBestEffort(m_size, &m_hugePagesCount));
+#   else
     m_scratchpad = static_cast<uint8_t*>(allocateLargePagesMemory(m_size));
+#   endif
+
     if (m_scratchpad) {
         m_flags.set(FLAG_HUGEPAGES, true);
 
