@@ -1,0 +1,21 @@
+{
+    "autosave": false,
+    "benchmark": {
+        "size": "1M",
+        "algo": "rx/sfx"
+    },
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "huge-pages-jit": true
+    },
+    "randomx": {
+        "init": -1,
+        "mode": "fast",
+        "wrmsr": false,
+        "rdmsr": false,
+        "numa": false
+    },
+    "opencl": false,
+    "cuda": false
+}
