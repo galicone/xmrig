@@ -1,0 +1,34 @@
+{
+    "autosave": false,
+    "background": false,
+    "colors": true,
+    
+    "benchmark": {
+        "size": "1M",
+        "algo": "rx/sfx"
+    },
+    
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "huge-pages-jit": false,
+        "hw-aes": null,
+        "priority": 2,
+        "asm": true,
+        "yield": false
+    },
+    
+    "randomx": {
+        "init": -1,
+        "init-avx2": -1,
+        "mode": "fast",
+        "1gb-pages": false,
+        "wrmsr": true,
+        "rdmsr": true,
+        "numa": true,
+        "scratchpad_prefetch_mode": 1
+    },
+    
+    "opencl": false,
+    "cuda": false
+}
